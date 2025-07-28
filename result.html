@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Result Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+    .sidebar {
+      background-color: #1a1a1a;
+      min-height: 100vh;
+      padding: 1.5rem 1rem;
+    }
+    .card-orange {
+      background-color: #f69c00;
+      border: none;
+      color: white;
+      border-radius: 12px;
+    }
+    .score-img-wrapper {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 12px;
+      text-align: center;
+      position: relative;
+    }
+    .score-img-wrapper img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+    .summary-box {
+      background: linear-gradient(135deg, #21db10, #816f6f); /* change colors as needed */
+      border-radius: 12px;
+      padding: 1.5rem;
+      font-weight: 500;
+      min-height: 130px;
+    }
+    .summary-box h5 {
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    .subject-table {
+      width: 100%;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+    }
+    .subject-table th, .subject-table td {
+      color: #fff;
+      font-weight: 500;
+      padding: 0.75rem 1rem;
+    }
+    .subject-table thead th {
+      background-color: #111;
+      border-bottom: 1px solid #333;
+    }
+    .btn-solution {
+      background-color: #007bff;
+      border: none;
+      padding: 0.4rem 1.2rem;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .btn-solution:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <div class="col-md-2 sidebar">
+        <h6 class="text-light fw-semibold">Overview</h6>
+        <hr class="text-secondary" />
+        <p class="text-muted mb-2">Subjects</p>
+        <p class="text-muted">Chapters</p>
+      </div>
+
+      <!-- Main content -->
+      <div class="col-md-10 p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <small class="text-secondary">MINOR TEST OFFLINE_AT-09:00 AM - Paper 1 | 2025-07-27 09:00:00</small>
+          </div>
+          <div class="btn btn-solution text-white">
+      <a href="solution.html" class="btn btn-outline-light">View Solution</a>
+    </div>
+        </div>
+
+        <!-- Fully replaced Scorecard with full-width image -->
+        <div class="score-img-wrapper mb-4">
+          <img src="image.png" alt="Scorecard Full Image">
+        </div>
+
+        <!-- Question Details Summary -->
+        <div class="row text-center mb-4 g-3">
+          <div class="col-md-4">
+            <div class="summary-box">
+              <h5 class="text-success">Correct</h5>
+              <p class="mb-0 fs-5">56</p>
+              <small>(+224.00 marks)</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="summary-box">
+              <h5 class="text-danger">Incorrect</h5>
+              <p class="mb-0 fs-5">20</p>
+              <small>(-20.00 marks)</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="summary-box">
+              <h5 class="text-muted">Unattempted</h5>
+              <p class="mb-0 fs-5">7</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subject Overview Table Replaced with Image -->
+        <div class="score-img-wrapper">
+          <img src="image copy.png" alt="Subject Overview">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
